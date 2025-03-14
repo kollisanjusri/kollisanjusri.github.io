@@ -3,50 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>My Portfolio - Kolli Sanju Sri</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#links">Links</a></li>
-        </ul>
-    </nav>
 
-    <section class="slide" id="portfolio">
-        <h1>PORTFOLIO</h1>
-    </section>
-
-    <section class="slide" id="certifications">
-        <h1>CERTIFICATIONS</h1>
-        <p>This section contains details about my certifications and achievements.</p>
-    </section>
-
-    <section class="slide" id="education">
-        <h1>EDUCATION</h1>
-        <p><strong>Senior Vocational School</strong> - Videography School | 2014</p>
-        <p><strong>University of Photography</strong> - Wedding Photography | 2017</p>
-    </section>
-
-    <section class="slide" id="about">
-        <h1>ABOUT ME</h1>
-        <div class="about-container">
-            <img src="profile.jpg" alt="Profile Picture">
-            <p>Hello, my name is Aaron Loeb. I am 23 years old and passionate about photography. I have 3 years of experience in food, landscape, and portrait photography. I started my career in photography at the age of 10.</p>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1 class="portfolio-title">My Portfolio</h1>
+                <nav class="buttons-container">
+                    <a href="javascript:void(0);" onclick="showSection('home')">Home</a>
+                    <a href="javascript:void(0);" onclick="showSection('about')">About</a>
+                    <a href="javascript:void(0);" onclick="showSection('education')">Education</a>
+                    <a href="javascript:void(0);" onclick="showSection('certifications')">Certifications</a>
+                    <a href="javascript:void(0);" onclick="showSection('profiles')">Profiles</a>
+                    <a href="javascript:void(0);" onclick="showSection('resume')">Resume</a>
+                    <a href="javascript:void(0);" onclick="showSection('contact')">Contact</a>
+                </nav>
+            </div>
         </div>
-    </section>
+    </header>
 
-    <section class="slide" id="links">
-        <h1>LINKS</h1>
-        <p>
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a> |
-            <a href="https://www.codechef.com/" target="_blank">CodeChef</a>
-        </p>
-    </section>
+    <!-- Main Content Wrapper -->
+    <main class="content">
+        <!-- Home Section -->
+        <section id="home" class="section">
+            <div class="container home-content">
+                <div class="left-text">
+                    <h2>Kolli Sanju Sri</h2>
+                    <p>I am a passionate Computer Science student with a deep interest in programming, problem-solving, and web development.  
+                    I love turning ideas into reality through code and enjoy working on creative projects.</p>
+                </div>
+                <div class="right-img">
+                    <img src="C:\Users\T490\Downloads\sanjupass.jpg" alt="Profile Picture" class="profile-img">
+                </div>
+            </div>
+        </section>
 
-    <script src="script.js"></script>
+        <!-- About Me Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>I am a Computer Science and Engineering student with a strong passion for programming and web development.  
+                   I have completed multiple certifications in Python, design thinking, and competitive programming.</p>
+                <p>I am a creative thinker who enjoys solving complex problems and building efficient solutions.  
+                   Currently, I am also an active member of the **ACM Student Chapter**, where I collaborate with like-minded peers.</p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="container">
+                <h2>Education</h2>
+                <p><strong>B.Tech in Computer Science and Engineering</strong> - Sasi Institute of Technology and Engineering, Tadepalligudem (Pursuing)</p>
+                <p><strong>Intermediate (12th Grade)</strong> - NRI Junior College, Eluru (Completed with 93.9%)</p>
+                <p><strong>SSC (10th Grade)</strong> - Suresh Chandra Bahuguna Police English Medium School, Eluru (Completed with 98%)</p>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section">
+            <div class="container">
+                <h2>Certifications</h2>
+                <ul>
+                    <li><strong>Python:</strong> Getting Started with Python (Coursera)</li>
+                    <li><strong>Design Thinking:</strong> Design Thinking & Innovation (Coursera)</li>
+                    <li><strong>Competitive Programming:</strong> Three Certifications in CodeChef</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Profiles Section -->
+        <section id="profiles" class="section">
+            <div class="container">
+                <h2>Profiles</h2>
+                <ul>
+                    <li><strong>CodeChef:</strong> <a href="#">https://www.codechef.com/users/your_username</a></li>
+                    <li><strong>HackerRank:</strong> <a href="#">https://www.hackerrank.com/your_username</a></li>
+                    <li><strong>GitHub:</strong> <a href="#">https://github.com/your_username</a></li>
+                    <li><strong>LinkedIn:</strong> <a href="#">https://www.linkedin.com/in/your_username</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="section">
+            <div class="container">
+                <h2>Resume</h2>
+                <p>Here is a sample preview of my resume. Click the button below to download the full version.</p>
+                <img src="C:\Users\T490\Pictures\Screenshots\Screenshot 2025-03-11 223144.png" alt="Resume Preview" class="resume-img">
+                <br>
+                <a href="resume.pdf" download="Kolli_Sanju_Sri_Resume" class="download-btn">Download Resume</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p><strong>Email:</strong> sanjusri.kolli@example.com</p>
+                <p><strong>Phone:</strong> +91 123 456 7890</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Kolli Sanju Sri. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+        showSection('home');
+    </script>
+
 </body>
 </html>
